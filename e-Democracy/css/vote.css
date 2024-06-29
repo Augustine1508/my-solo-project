@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .contain{
+    text-align: center;
+    color: #45a049;
+  }
+  
+  .container {
+    display: flex;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results span {
+    font-weight: bold;
+  }
+
+  /* mine */
+
+  .container-fluid{
+    display:flex ;
+    justify-content: center;
+    
+  }
+
+  .card-body img{
+    width: 100px;
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+
+  .btn:hover{
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+
+  /* tryout */
+/* Style for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    z-index: 1000;
+}
+
+/* Overlay style */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Style for the buttons */
+.btnn {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+

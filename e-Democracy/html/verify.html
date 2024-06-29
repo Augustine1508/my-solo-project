@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="/css/verify.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="../images/fevicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/464f6e321a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- <nav class="navbar">
+        <h1>Website Title</h1>
+        <img id="navProfileImage" src="" alt="Profile Image" style="display:none;" />
+    </nav> -->
+
+    <div class="upload-container bg">
+        <h2 class="text-success">Upload Profile Image</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*" />
+            <div id="previewContainer">
+                <img id="previewImage" src="" alt="Image Preview" style="display:none;" />
+            </div>
+            <div id="errorMessage" class="error"></div>
+            <button type="button" onclick="uploadImage()" class="btn btn-outline-success">Upload</button>
+        </form>
+    </div>
+
+    <div class="formv-container bg">
+        <h2 class="text-success">VERIFY YOUR PERSONAL INFO</h2>
+        <form id="verificationForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                <button type="button" onclick="showEmailOtpInput()">Verify Email</button>
+                <input type="text" id="emailOtp" placeholder="Enter OTP" style="display:none;" />
+                <button type="button" id="verifyEmailOtpButton" onclick="verifyEmailOtp()" style="display:none;">Submit OTP</button>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" required />
+                <button type="button" onclick="showPhoneOtpInput()">Verify Phone</button>
+                <input type="text" id="phoneOtp" placeholder="Enter OTP" style="display:none;" />
+                <button type="button" id="verifyPhoneOtpButton" onclick="verifyPhoneOtp()" style="display:none;">Submit OTP</button>
+            </div>
+            <div class="form-group">
+                <label for="nationalId">National Identity Number:</label>
+                <input type="text" id="nationalId" required />
+                <button type="button" onclick="verifyNationalId()">Verify National ID</button>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" required />
+                <button type="button" onclick="verifyAddress()">Verify Address</button>
+            </div>
+            <div class="form-group">
+                <label for="proofOfAddress">Proof of Address:</label>
+                <input type="file" id="proofOfAddress" accept=".jpg,.jpeg,.png,.pdf" required />
+                <button type="button" onclick="verifyProofOfAddress()">Verify Proof of Address</button>
+            </div>
+            <button type="submit" class="btn btn-outline-success mt-5">Submit</button>
+        </form>
+        <div id="successMessage" class="success" style="display:none;">
+            Form submitted successfully!
+        </div>
+    </div>
+
+    
+
+
+<script src="/js/verify.js"></script>
+</body>
+</html>

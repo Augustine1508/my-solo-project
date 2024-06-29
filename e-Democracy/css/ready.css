@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&diplay=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/bg-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.header{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+}
+
+.container{
+    background-color: rgba(255, 166, 0, 0.26);
+    text-align: justify;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.container h4{
+    color: green;
+    text-align: center;
+    padding: 5px;
+    background-color: orange;
+    margin: 0 -11px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* .vote button{
+    margin: 30px;
+    padding: 10px;
+    background-color: aqua;
+    color: blue;
+} */
+
+
+
+input[type="button"] {
+    background: linear-gradient(to right, #4CAF50, #66BB6A); /* Gradient background */
+    border: none; 
+    color: white;
+    padding: 2% 10%; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1.5rem; 
+    margin: 10px 35%; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  }
+
+  input[type="button"]:hover {
+    background: linear-gradient(to right, #45a049, #57b956);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+  }
+
+  input[type="button"]:active {
+    background: linear-gradient(to right, #3e8e41, #4a9d4d); 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+    transform: translateY(2px);
+  }
