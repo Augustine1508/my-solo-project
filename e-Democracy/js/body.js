@@ -28,7 +28,7 @@
 
 
 function countdown() {
-    const endDate = new Date("2024-12-31T23:59:59").getTime();
+    const endDate = new Date("2027-02-25T23:59:59").getTime();
     const now = new Date().getTime();
     const timeLeft = endDate - now;
 

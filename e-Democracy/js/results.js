@@ -1,6 +1,6 @@
-let apcVotes = 0;
-let pdpVotes = 0;
-let lpVotes = 0;
+let apcVotes = 5;
+let pdpVotes = 30;
+let lpVotes = 70;
 
 function updateVotes() {
     apcVotes += Math.floor(Math.random() * 5) + 1;

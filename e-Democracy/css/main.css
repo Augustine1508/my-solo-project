@@ -1,12 +1,14 @@
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 90px;
     font-family: Arial, sans-serif;
     background: url('/images/bg-img4.jpg') no-repeat center center fixed;
     background-size: cover;
   }
 
   .nav-bar{
+    z-index: 1000;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,8 +20,7 @@ body {
     height: 60px;
     position: fixed;
     font-weight: bold;
-    margin-top: -10px;
-    margin-top: 100px;
+
     
     
 }
@@ -36,6 +37,7 @@ body {
     width: 80%;
     height: 80vh;
 }
+
 
 .container-fluid{
     padding: auto;
